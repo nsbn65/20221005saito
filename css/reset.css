@@ -1,10 +1,15 @@
-@charset "UTF-8";
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
 
 html,
 body,
 div,
 span,
-applet,
 object,
 iframe,
 h1,
@@ -16,11 +21,8 @@ h6,
 p,
 blockquote,
 pre,
-a,
 abbr,
-acronym,
 address,
-big,
 cite,
 code,
 del,
@@ -30,19 +32,14 @@ img,
 ins,
 kbd,
 q,
-s,
 samp,
 small,
-strike,
 strong,
 sub,
 sup,
-tt,
 var,
 b,
-u,
 i,
-center,
 dl,
 dt,
 dd,
@@ -65,16 +62,13 @@ article,
 aside,
 canvas,
 details,
-embed,
-figure,
 figcaption,
+figure,
 footer,
 header,
 hgroup,
 menu,
 nav,
-output,
-ruby,
 section,
 summary,
 time,
@@ -83,10 +77,15 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: none;
-  font-style: normal;
-  text-align: left;
-  zoom: 1;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
 }
 
 article,
@@ -103,62 +102,72 @@ section {
   display: block;
 }
 
-table {
-  border-collapse: collapse;
-  font-family: inherit;
+nav ul {
+  list-style: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
   font-size: 100%;
-  font-weight: normal;
-  line-height: 1;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 input,
-textarea,
 select {
-  font-family: inherit;
-  font-size: 16px;
-}
-
-input[type="button"],
-input[type="text"],
-input[type="submit"] {
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-textarea {
-  resize: none;
-  -webkit-appearance: none;
-  border-radius: 0;
-}
-
-th,
-td {
-  border-collapse: collapse;
-}
-
-table th,
-table td {
-  white-space: nowrap;
-}
-
-ul,
-ol {
-  list-style-type: none;
-}
-
-img {
-  vertical-align: text-bottom;
-  vertical-align: -webkit-baseline-middle;
-  max-width: 100%;
-  height: auto;
-  width
-  /***/
-  : auto;
+  vertical-align: middle;
 }
