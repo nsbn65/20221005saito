@@ -23,12 +23,15 @@
   text-decoration: none;
   font-size: 15px;
 }
-
+.firstview {
+  width: 100%;
+  height: 450px;
+}
 
 .firstview_img {
   position: relative;
   justify-content: right;
-  text-align: end;
+  text-align: right;
   top: -25px;
   z-index: 0;
 }
